@@ -1,3 +1,4 @@
+#include "reset.h"
 #include <stdio.h>
 /*
  *main- check the codes
@@ -6,9 +7,8 @@
  *always return zero(0)
  */
 
-void reset_to_98(int *m){
-	*m=98;
-}
+void reset_to_98();
+	
 int main(void)
 {
 
