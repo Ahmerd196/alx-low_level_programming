@@ -1,5 +1,5 @@
 #include "main.h"
-/lphabet(void);/**
+/**
  *
  * main - check the code
  *
@@ -9,6 +9,5 @@
 int main(void)
 {
 	print_alphabet();
-	return (0)
-ioid print_alphabet(void);
+	return (0);
 }
