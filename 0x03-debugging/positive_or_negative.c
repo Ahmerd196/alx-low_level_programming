@@ -2,8 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main -Determines if a number is positive, negative or zero.
+ *main - determines if a number is positive, negative or zero.
  *
+ * positive_or_negative - return a positive or negative number.
  *
  * Return: Always 0 (Success)
  *
@@ -11,6 +12,7 @@
 int positive_or_negative(void)
 {
 	int n;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
