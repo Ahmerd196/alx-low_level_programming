@@ -1,5 +1,5 @@
 #include "main.h"
-/*
+/**
  * swap_int - swap two integer numbers.
  *
  * @a: first integer value
