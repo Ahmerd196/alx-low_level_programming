@@ -15,7 +15,6 @@ int main(void)
 	/*
 	 * write your line of code here...
 	 * Remember:
-	 * - you are not allowed to use a
 	 */
 	p[5] = 98;
 	/* ...so that this prints 98\n */
