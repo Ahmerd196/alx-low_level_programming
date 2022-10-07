@@ -18,21 +18,21 @@
  */
 void _is_zero(char *argv[])
 {
-	int i, isn1 = 1, isn2 = 1;
+	int mul, num1 = 1, num2 = 1;
 
-	for (i = 0; argv[1][i]; i++)
-		if (argv[1][i] != '0')
+	for ( mul = 0; argv[1][mul]; mul++)
+		if (argv[1][mul] != '0')
 		{
-			isn1 = 0;
+			num1 = 0;
 			break;
 		}
-	for (i = 0; argv[2][i]; i++)
-		if (argv[2][i] != '0')
+	for (mul = 0; argv[2][mul]; mul++)
+		if (argv[2][mul] != '0')
 		{
-			isn2 = 0;
+			num2 = 0;
 			break;
 		}
-	if (isn1 == 1 || isn2 == 1)
+	if (num1 == 1 || num2 == 1)
 	{
 		printf("0\n");
 		exit(0);
@@ -54,10 +54,10 @@ void _is_zero(char *argv[])
 
 char *_initialize_array(char *ar, int lar)
 {
-	int i = 0;
+	int mul = 0;
 
-	for (i = 0; i < lar; i++)
-		ar[i] = '0';
+	for (mul = 0; mul < lar; mul++)
+		ar[mul] = '0';
 	ar[lar] = '\0';
 	return (ar);
 }
@@ -75,17 +75,17 @@ char *_initialize_array(char *ar, int lar)
  *
  */
 
-int _checknum(char *argv[], int n)
+int _checknum(char *argv[], int num1)
 {
-	int ln;
+	int num2;
 
-	for (ln = 0; argv[n][ln]; ln++)
-		if (!isdigit(argv[n][ln]))
+	for (num2 = 0; argv[num1][num2]; num2++)
+		if (!isdigit(argv[num1][num2]))
 		{
 			printf("Error\n");
 			exit(98);
 		}
-	return (ln);
+	return (num2);
 }
 /**
  * main - Entry point.
