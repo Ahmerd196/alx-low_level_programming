@@ -3,11 +3,9 @@
 #include <time.h>
 /**
  * f4 - finds the biggest number
- *
  * @usrn: username
  *
  * @len: length of username
- *
  * Return: the biggest number
  *
  */
@@ -28,6 +26,7 @@ int f4(char *usrn, int len)
 	srand(ch ^ 14);
 	rand_num = rand();
 	return (rand_num & 63);
+}
 /**
  * f5 - multiplies each char of username
  *
@@ -80,7 +79,6 @@ int f6(char *usrn)
  * @argv: arguments vector
  *
  * Return: Always 0
- *
  */
 int main(int argc, char **argv)
 {
