@@ -1,1 +1,1 @@
-readme for c continuation
+Dynamic library in c programming language
