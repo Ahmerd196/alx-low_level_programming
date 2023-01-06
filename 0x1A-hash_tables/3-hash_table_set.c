@@ -50,6 +50,7 @@ hash_node_t *add_n_hash(hash_node_t **head, const char *key, const char *value)
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int k_index;
+
 	if (ht == NULL)
 		return (0);
 	if (key == NULL || *key == '\0')
